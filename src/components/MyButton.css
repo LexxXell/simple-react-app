@@ -1,0 +1,35 @@
+.my-button {
+  border-radius: 33px;
+  background: #9e896a;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.my-button:hover {
+  background-color: #b0a080;
+}
+
+@keyframes click {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.my-button:active {
+  background-color: #8a7a5f;
+  animation: click 0.2s ease;
+}
+.my-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 1);
+}
