@@ -1,0 +1,41 @@
+.input-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 435px;
+  height: 54px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  border: 1px solid #9e896a;
+  background: #fff;
+  padding: 15px 30px;
+}
+
+.input-wrapper input {
+  outline: none;
+  width: 100%;
+  caret-color: #aaa;
+  color: #555;
+  font: 400 18px Poppins, sans-serif;
+}
+
+.input-wrapper input::placeholder {
+  color: #acacac;
+  font: 300 15px Poppins, sans-serif;
+}
+
+.show-pass-icon {
+  height: 18px;
+  width: 19px;
+  margin-left: 10px;
+  cursor: pointer;
+  fill: #555;
+}
+
+.show-pass-icon.show {
+  fill: #ccc;
+}
+
+.show-pass-icon.text {
+  display: none;
+}

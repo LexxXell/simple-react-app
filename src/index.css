@@ -2,6 +2,11 @@
   user-select: none;
 }
 
-button {
+* {
   border: none;
+}
+
+:focus {
+  outline: none;
+  /* box-shadow: 0 0 5px rgba(52, 152, 219, 1); */
 }
