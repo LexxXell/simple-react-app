@@ -30,3 +30,11 @@
   background-color: #8a7a5f;
   animation: click 0.2s ease;
 }
+
+.alt {
+  background: #553e19;
+}
+
+.alt:hover {
+  background: #765624;
+}
