@@ -39,3 +39,9 @@
 .show-pass-icon.text {
   display: none;
 }
+
+@media (max-aspect-ratio: 1/1) {
+  .input-wrapper {
+    width: 317px;
+  }
+}

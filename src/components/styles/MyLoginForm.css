@@ -40,3 +40,12 @@
   width: 232px;
   height: 49px;
 }
+
+@media (max-aspect-ratio: 1/1) {
+  .forgot-password-container a {
+    margin-right: 27px;
+  }
+  .button {
+    margin-right: 10px;
+  }
+}

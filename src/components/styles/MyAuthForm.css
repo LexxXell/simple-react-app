@@ -1,5 +1,6 @@
 .auth-form-container {
   border: none;
+  width: 435px;
 }
 
 .header-container {
@@ -27,4 +28,14 @@
 p {
   color: #5b5b5b;
   margin-bottom: 42px;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .toggle {
+    width: 315px;
+    height: 59px;
+  }
+  .auth-form-container {
+    width: 331px;
+  }
 }

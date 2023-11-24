@@ -8,7 +8,7 @@ function App() {
     <div className="container">
       <MyCatImage />
       <div className="auth-container">
-        <MyAuthForm width="435px" />
+        <MyAuthForm />
       </div>
     </div>
   );
