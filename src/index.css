@@ -1,12 +1,24 @@
+/* Custom reset */
+
+*,
 :root {
   user-select: none;
-}
-
-* {
   border: none;
 }
 
 :focus {
   outline: none;
   /* box-shadow: 0 0 5px rgba(52, 152, 219, 1); */
+}
+
+/* Custom Base Styles */
+
+h4,
+p,
+label {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
