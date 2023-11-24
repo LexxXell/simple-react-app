@@ -39,3 +39,9 @@
   font-size: 25px;
   font-weight: 400;
 }
+
+@media (max-aspect-ratio: 1/1) {
+  .image-container {
+    display: none;
+  }
+}
