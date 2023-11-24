@@ -1,6 +1,7 @@
 import React, { ChangeEvent, useCallback, useState } from 'react';
-import './MyInput.css';
 import { IMyComponentProps } from '../@types';
+
+import './styles/MyInput.css';
 
 type InputType = 'text' | 'password';
 

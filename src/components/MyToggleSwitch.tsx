@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import './MyToggleSwitch.css';
 import { IMyComponentProps } from '../@types';
+
+import './styles/MyToggleSwitch.css';
 
 interface IMyToggleSwitchProps extends IMyComponentProps {
   state0Text?: string;

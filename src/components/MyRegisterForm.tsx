@@ -3,9 +3,9 @@ import { IMyComponentProps } from '../@types';
 import { register } from '../controllers';
 import MyInput from './MyInput';
 import MyButton from './MyButton';
-
-import './MyRegisterForm.css';
 import { registerValidate } from '../validators';
+
+import './styles/MyRegisterForm.css';
 
 const MyRegisterForm: FC<IMyComponentProps> = ({}) => {
   const [email, setEmail] = useState('');

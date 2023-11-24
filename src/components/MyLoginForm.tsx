@@ -3,9 +3,9 @@ import { IMyComponentProps } from '../@types';
 import MyInput from './MyInput';
 import MyButton from './MyButton';
 import { login } from '../controllers';
-
-import './MyLoginForm.css';
 import { loginValidate } from '../validators';
+
+import './styles/MyLoginForm.css';
 
 const MyLoginForm: FC<IMyComponentProps> = ({}) => {
   const [username, setUsername] = useState('');

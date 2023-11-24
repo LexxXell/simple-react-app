@@ -1,9 +1,10 @@
 import { FC, useCallback, useState } from 'react';
-import './MyAuthForm.css';
 import { IMyComponentProps } from '../@types';
 import MyToggleSwitch from './MyToggleSwitch';
 import MyLoginForm from './MyLoginForm';
 import MyRegisterForm from './MyRegisterForm';
+
+import './styles/MyAuthForm.css';
 
 interface IMyAuthForm extends IMyComponentProps {}
 

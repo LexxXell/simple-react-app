@@ -1,6 +1,7 @@
 import React from 'react';
-import './MyButton.css';
 import { IMyComponentProps } from '../@types';
+
+import './styles/MyButton.css';
 
 interface IMyButtonProps extends IMyComponentProps {
   view?: 'def' | 'alt';
