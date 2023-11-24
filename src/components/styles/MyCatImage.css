@@ -1,0 +1,41 @@
+.image-container {
+  width: 737px;
+  height: 825px;
+  position: relative;
+  border-radius: 29px;
+  overflow: hidden;
+}
+
+.catImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: inherit;
+  background: linear-gradient(180deg, rgba(151, 118, 68, 0.35), rgba(0, 0, 0, 0.35));
+}
+
+.overlay-paragraph {
+  margin-left: 69px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.overlay-paragraph:last-child {
+  margin-bottom: 55px;
+  width: 301px;
+  font-size: 25px;
+  font-weight: 400;
+}
