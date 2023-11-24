@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './MyButton.css';
 import { IMyComponentProps } from '../@types';
 
@@ -8,24 +8,10 @@ interface IMyButtonProps extends IMyComponentProps {
 }
 
 const MyButton: React.FC<IMyButtonProps> = ({ width, height, className, onClick, children }) => {
-  const [isClicked, setIsClicked] = useState(false);
-
-  const handleClick = () => {
-    setIsClicked(true);
-
-    if (onClick) {
-      onClick();
-    }
-
-    setIsClicked(false);
-  };
+  const handleClick = () => onClick?.();
 
   return (
-    <button
-      className={`my-button ${className} ${isClicked ? 'clicked' : ''}`}
-      style={{ width, height }}
-      onClick={handleClick}
-    >
+    <button className={`my-button ${className}`} style={{ width, height }} onClick={handleClick}>
       {children}
     </button>
   );
