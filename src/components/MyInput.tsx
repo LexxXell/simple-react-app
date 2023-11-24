@@ -10,7 +10,7 @@ interface IMyInputProps extends IMyComponentProps {
   onChange?: (value: string) => void;
 }
 
-const MyInput: React.FC<IMyInputProps> = ({ width, height, placeholder, type = 'text', onChange }) => {
+const MyInput: React.FC<IMyInputProps> = ({ width, height, className, placeholder, type = 'text', onChange }) => {
   const [isShow, setIsShow] = useState(false);
 
   const handleClickShow = useCallback(() => setIsShow(!isShow), [isShow]);
@@ -27,7 +27,7 @@ const MyInput: React.FC<IMyInputProps> = ({ width, height, placeholder, type = '
   const show = isShow ? 'show' : '';
 
   return (
-    <div style={{ width, height }} className="input-wrapper">
+    <div style={{ width, height }} className={`input-wrapper ${className}`}>
       <input type={inputType} placeholder={placeholder} onChange={handleChange} />
       <div className={`show-pass-icon ${show} ${type}`} onClick={handleClickShow}>
         <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
