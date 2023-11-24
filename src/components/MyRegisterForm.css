@@ -1,0 +1,21 @@
+.label-container {
+  margin-bottom: 12px;
+}
+
+.input {
+  margin-bottom: 30px;
+}
+
+.input-bottom-register {
+  margin-bottom: 55px;
+}
+
+.button-container {
+  width: 100%;
+  text-align: right;
+}
+
+.button {
+  width: 232px;
+  height: 49px;
+}

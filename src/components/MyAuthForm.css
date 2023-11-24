@@ -1,0 +1,30 @@
+.auth-form-container {
+  border: none;
+}
+
+.header-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.header-container h4 {
+  color: #000;
+}
+
+.toggle-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 52px;
+}
+
+.toggle {
+  width: 329px;
+  height: 59px;
+}
+
+p {
+  color: #5b5b5b;
+  margin-bottom: 42px;
+}

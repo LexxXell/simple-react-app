@@ -1,0 +1,42 @@
+.label-container {
+  margin-bottom: 12px;
+}
+
+.input {
+  margin-bottom: 30px;
+}
+
+.input-bottom-login {
+  margin-bottom: 22px;
+}
+
+.forgot-password-container {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 62px;
+}
+
+.forgot-password-container a {
+  margin-right: 3px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.forgot-password-container a:hover {
+  text-decoration: underline;
+}
+
+.button-container {
+  width: 100%;
+  text-align: right;
+}
+
+.button {
+  width: 232px;
+  height: 49px;
+}
