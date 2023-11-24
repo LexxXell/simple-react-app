@@ -1,10 +1,10 @@
 import './App.css';
-import MyAuthForm from './components/MyAuthForm';
+import MyCatImage from './components/MyCatImage';
 
 function App() {
   return (
     <>
-      <MyAuthForm width="435px" />
+      <MyCatImage />
     </>
   );
 }
