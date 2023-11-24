@@ -5,12 +5,23 @@ import { IMyComponentProps } from '../@types';
 type InputType = 'text' | 'password';
 
 interface IMyInputProps extends IMyComponentProps {
+  name?: string;
   placeholder?: string;
   type?: InputType;
+  value?: string;
   onChange?: (value: string) => void;
 }
 
-const MyInput: React.FC<IMyInputProps> = ({ width, height, className, placeholder, type = 'text', onChange }) => {
+const MyInput: React.FC<IMyInputProps> = ({
+  width,
+  height,
+  value,
+  name,
+  className,
+  placeholder,
+  type = 'text',
+  onChange,
+}) => {
   const [isShow, setIsShow] = useState(false);
 
   const handleClickShow = useCallback(() => setIsShow(!isShow), [isShow]);
@@ -28,7 +39,7 @@ const MyInput: React.FC<IMyInputProps> = ({ width, height, className, placeholde
 
   return (
     <div style={{ width, height }} className={`input-wrapper ${className}`}>
-      <input type={inputType} placeholder={placeholder} onChange={handleChange} />
+      <input value={value} type={inputType} name={name} placeholder={placeholder} onChange={handleChange} />
       <div className={`show-pass-icon ${show} ${type}`} onClick={handleClickShow}>
         <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
           <path d="M8.86298 6.14997L11.4397 8.72665L11.4519 8.59168C11.4519 7.23789 10.3517 6.1377 8.99795 6.1377L8.86298 6.14997Z" />
