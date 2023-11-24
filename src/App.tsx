@@ -7,11 +7,11 @@ function App() {
   return (
     <>
       <MyToggleSwitch width="329px" height="59px" state0Text="Login" state1Text="Register" />
-      <MyButton width="232" height="49" className="login-my-button">
+      <MyButton width="232px" height="49px" className="login-my-button">
         Login
       </MyButton>
-      <MyInput placeholder="Input something common" />
-      <MyInput placeholder="Input something secret" type="password" />
+      <MyInput width="435px" height="54px" placeholder="Input something common" />
+      <MyInput width="435px" height="54px" placeholder="Input something secret" type="password" />
     </>
   );
 }
